@@ -23,18 +23,18 @@
     <spring.security.version>3.2.5.RELEASE</spring.security.version>
     <apache.tiles.version>3.0.4</apache.tiles.version>
     <javax.jstl.version>1.2</javax.jstl.version>
+    <version.org.jboss.bom.brms>6.2.2.GA-redhat-2</version.org.jboss.bom.brms>
   </properties>
 
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-platform-bom</artifactId>
-        <version>${kie.version}</version>
-        <scope>import</scope>
-        <type>pom</type>
+     <dependency>
+       <groupId>org.jboss.bom.brms</groupId>
+       <artifactId>jboss-brms-bpmsuite-bom</artifactId>
+       <version>${version.org.jboss.bom.brms}</version>
+       <type>pom</type>
+       <scope>import</scope>
       </dependency>
-
       <dependency>
         <groupId>org.jbpm.spring</groupId>
         <artifactId>spring-jbpm-backend</artifactId>
